@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 import { useNavigate, useLocation } from 'react-router-dom';
 import dataBooks from '../assets/childrensbooks.json';
 
-function Book({dataBooks}){
+function Book({data}){
     let params = useParams();
     const navigate = useNavigate();
-    console.log(dataBooks);
+    console.log(data);
     return (
         <section className="singleBook">
             <button className="btn" onClick={() => navigate(-1)}><span className="material-icons">

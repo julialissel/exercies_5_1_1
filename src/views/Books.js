@@ -1,19 +1,19 @@
-import dataBooks from '../assets/childrensbooks.json';
+
 import { Link, Outlet } from "react-router-dom";
 
-function Books(){
+function Books({data}){
     
     
     return(
         <section className='container'>
             <h1>8 Classic Childrens books </h1>
             <nav>
-                {dataBooks.map((book) => (
+                {data.map((book) => (
                 <Link
                     style={{ backgroundColor:`${book.color}`} }
                     // to={`/books/${book.title}`}
                     to={{
-                        pathname: `/books/${book.title}`
+                        pathname: `/books/${book.id}`
                       }}
                     key={book.id}
                 >   

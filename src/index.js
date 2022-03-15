@@ -18,8 +18,8 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Books />} />
-      <Route path="/books/:bookId" element={<Book />} data={dataBooks}/>
+      <Route path="/" element={<Books data={dataBooks} />} />
+      <Route path="/books/:bookId" element={<Book data={dataBooks}/>} />
         <Route
           path="*"
           element={
