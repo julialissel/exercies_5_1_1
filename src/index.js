@@ -3,10 +3,33 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Books from './views/Books';
+import Book from './views/Book'
+import dataBooks from './assets/childrensbooks.json';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Books />} />
+      <Route path="/books/:bookId" element={<Book />} data={dataBooks}/>
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+            }
+        />
+    </Routes>
+  </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

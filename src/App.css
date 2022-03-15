@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 900px;
+  margin:auto;
+  font-family: 'Roboto';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h1{
+  font-size: 2.8rem;
+  margin: 5rem 0 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  background: #8A8A8A;
+  border-radius: 50%;
+  padding: .5rem;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: 2rem 0;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav a{
+  position: relative;
+  flex: 0 0 23.5%;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
   color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
+  background: linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%), #F2C94C;
 }
+nav a::before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 28.65%, rgba(0, 0, 0, 0.4) 67.71%, rgba(0, 0, 0, 0) 100%);
+  width: 4px;
+  height: 100%;
+  left: 1rem;
+  bottom: 0;
 
-.App-link {
-  color: #61dafb;
 }
+nav a article{
+  flex: 0 0 100%;
+}
+nav a article h3{
+  font-size: 1.125rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+nav a article h4{
+  font-size: .7rem;
+  font-weight:400;
+
+}
+.book{
+  height: 446px;
+  background: linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%), #F2C94C;
+}
+.singleBook{
+  max-width: 900px;
+  margin: auto;
+}
+.singleBook{
+
+}
+.singleBook-container{
+  display: flex;
+  justify-content: space-between;
+}
+.singleBook-container .book{
+  flex: 0 0 40%;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+
+}
+.singleBook-container .book::before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 28.65%, rgba(0, 0, 0, 0.4) 67.71%, rgba(0, 0, 0, 0) 100%);
+  width: 4px;
+  height: 100%;
+  left: 1rem;
+  bottom: 0;
+
+}
+.singleBook-container .book h3{
+  font-size: 2.3rem;
+}
+.singleBook-container .book h4{
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.singleBook-container .textBox{
+  flex: 0 0 55%;
+}
+.singleBook-container .textBox p{
+  line-height: 21px;
+  font-size: 1.125rem;
+}
+.singleBook-container .textBox h1{
+  font-size: 2.3rem;
+}
+.singleBook-container .textBox h3{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+.infoBox{
+  background: rgba(196, 196, 196, 0.08);
+  border-radius: 2px;
+  display: flex;
+  padding: 1.2rem;
 }
