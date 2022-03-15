@@ -1,18 +1,27 @@
 import { useParams } from "react-router-dom";
 import { useNavigate, useLocation } from 'react-router-dom';
-import dataBooks from '../assets/childrensbooks.json';
+
+
 
 function Book({data}){
     let params = useParams();
     const navigate = useNavigate();
-    console.log(data);
+ 
+   
     return (
         <section className="singleBook">
             <button className="btn" onClick={() => navigate(-1)}><span className="material-icons">
 west
 </span></button>
             <article className="singleBook-container">
-
+                {data.map((book) =>{
+                    // console.log(book)
+                    console.log(params)
+                //    funkar inte 
+                    if(book.id == params){
+                        console.log("TJOHO")
+                    }
+                })}
                 <div className="book">
                     <div>
                         <h3>r</h3>
