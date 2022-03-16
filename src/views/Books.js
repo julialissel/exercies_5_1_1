@@ -1,7 +1,14 @@
-
-import { Link, Outlet } from "react-router-dom";
+import '../App.css';
+import { Link} from "react-router-dom";
+import { useState} from 'react';
 
 function Books({data}){
+    const [color, changeColor] = useState("#282c34");
+
+    function colorBody(colorIn){
+        changeColor(colorIn)
+        document.body.style.backgroundColor = color;
+    }
     
     
     return(
@@ -16,6 +23,7 @@ function Books({data}){
                         pathname: `/books/${book.id}`
                       }}
                     key={book.id}
+                    onClick={() => colorBody("#282c34")}
                 >   
                     <article >
                         <h3>{book.title}</h3>

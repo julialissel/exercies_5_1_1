@@ -1,0 +1,88 @@
+.btn{
+    background: #8A8A8A;
+    border-radius: 50%;
+    padding: .5rem;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 2rem 0;
+    cursor: pointer;
+  }
+.singleBook{
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .singleBook-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .singleBook-container .book{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%), #F2C94C;
+  
+  }
+  .singleBook-container .book::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 28.65%, rgba(0, 0, 0, 0.4) 67.71%, rgba(0, 0, 0, 0) 100%);
+    width: 4px;
+    height: 100%;
+    left: 1rem;
+    bottom: 0;
+  
+  }
+  .singleBook-container .book h3{
+    font-size: 2.3rem;
+  }
+  .singleBook-container .book h4{
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .singleBook-container .textBox{
+    flex: 0 0 55%;
+  }
+  .singleBook-container .textBox .ingress{
+    line-height: 21px;
+    font-size: 1.125rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .singleBook-container .textBox h1{
+    font-size: 2.3rem;
+    color: white;
+  }
+  .singleBook-container .textBox h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+    color: white;
+  }
+  .infoBox{
+    background: rgba(196, 196, 196, 0.08);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    color: white;
+  }
+  .infoBox .column p:first-child{
+    margin-bottom: 1rem;
+  }
+  .infoBox .column span{
+    font-weight: 700;
+}
+.btn-read{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+  
